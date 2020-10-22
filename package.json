@@ -1,0 +1,19 @@
+{
+  "name": "06nodepractico",
+  "version": "1.0.0",
+  "description": "Curso practico de nodeje dictado por Carlos Hernandez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CLGonzalezGroh/06nodepractico.git"
+  },
+  "author": "Cesar Gonzalez Groh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CLGonzalezGroh/06nodepractico/issues"
+  },
+  "homepage": "https://github.com/CLGonzalezGroh/06nodepractico#readme"
+}

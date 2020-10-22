@@ -1,2 +1,3 @@
 # 06nodepractico
-Curso practico de nodeje dictado por Carlos Hernandez
+
+Curso práctico de nodejs dictado por Carlos Hernandez
