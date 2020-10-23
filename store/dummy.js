@@ -1,14 +1,15 @@
 const db = {
-  user: [
-    {
-      id: "1",
-      name: "Cesar",
-    },
-    {
-      id: "2",
-      name: "Luis",
-    },
-  ],
+  // user: [
+  //   {
+  //     id: "1",
+  //     name: "Cesar",
+  //   },
+  //   {
+  //     id: "2",
+  //     name: "Luis",
+  //   },
+  // ],
+  // auth: [],
 };
 
 async function list(tabla) {
@@ -21,8 +22,11 @@ async function get(tabla, id) {
 }
 
 async function upsert(tabla, data) {
+  if (!db[tabla]) {
+    db[tabla] = [];
+  }
   db[tabla].push(data);
-  return db[tabla];
+  console.log(db);
 }
 
 async function remove(tabla, id) {
