@@ -9,7 +9,7 @@ exports.success = function (req, res, message, status) {
   });
 };
 
-exports.error = function (req, res, message, status) {
+exports.error = function (req, res, message, status, e) {
   let statusCode = status || 500;
   let statusMessage = message || "Internal error";
 
@@ -18,4 +18,5 @@ exports.error = function (req, res, message, status) {
     status: statusCode,
     message: statusMessage,
   });
+  console.log("[Error in store]", e);
 };
