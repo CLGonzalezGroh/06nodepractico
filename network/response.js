@@ -18,5 +18,4 @@ exports.error = function (req, res, message, status, e) {
     status: statusCode,
     message: statusMessage,
   });
-  console.log("[Error in store]", e);
 };
