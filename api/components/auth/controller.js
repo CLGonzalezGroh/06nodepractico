@@ -13,7 +13,7 @@ module.exports = function (injectedStore) {
     const data = await store.query(TABLE, { username: username });
     return bcrypt.compare(password, data.password).then((equal) => {
       if (equal) {
-        return auth.sign(data);
+        return auth.sign(JSON.parse(JSON.stringify(data)));
       } else {
         throw err("Invalid data", 400);
       }
